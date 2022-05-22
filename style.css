@@ -1,0 +1,474 @@
+body {
+  background: #F8F9F9;
+}
+
+.box {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: 50px auto;
+}
+
+.mug-inside-top {
+  position: absolute;
+  height: 15%;
+  width: 55%;
+  top: 30.6%;
+  left: 20%;
+  border-radius: 50%;
+  background-color: #3f5973;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.mug-front-curve {
+  position: absolute;
+  top: 25%;
+  width: 55%;
+  height: 20%;
+  left: 20%;
+  border-bottom-left-radius: 80%;
+  border-bottom-right-radius: 80%;
+  border: 40px solid #1B2631;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  z-index: 7;
+}
+
+.mug-front {
+  position: absolute;
+  height: 57%;
+  width: 55%;
+  top: 38%;
+  left: 20%;
+  background-color: #1B2631;
+  border-bottom-left-radius: 100% 50px;
+  border-bottom-right-radius: 100% 50px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.mug-bottom {
+  position: absolute;
+  height: 20%;
+  width: 60%;
+  top: 78%;
+  left: 20%;
+  border-radius: 50%;
+  background-color: #1B2631;
+}
+
+.handle {
+  position: absolute;
+  height: 18%;
+  width: 20%;
+  left: 5%;
+  top: 48%;
+  border: 30px solid #1B2631;
+  border-radius: 70px/60px;
+  border-right: none;
+  z-index: 0;
+}
+
+.pencil {
+  position: absolute;
+  height: 40%;
+  width: 4.8%;
+  top: 10%;
+  left: 33%;
+  background-color: #E09809;
+  transform: rotate(-10deg);
+  z-index: 4;
+}
+.pencil .metal {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  top: -20%;
+  border-radius: 10px 20px 0 0;
+  background-color: #517394;
+}
+.pencil .eraser {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  top: -20%;
+  border-radius: 10px 20px 0 0;
+  background-color: #d66e6e;
+}
+
+.pencil-two {
+  position: absolute;
+  height: 40%;
+  width: 4.8%;
+  top: 10%;
+  left: 40%;
+  background-color: #ad3131;
+  transform: rotate(-3deg);
+  z-index: 4;
+}
+.pencil-two .metal {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  top: -10%;
+  background-color: #517394;
+}
+.pencil-two .eraser {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  top: -17%;
+  border-radius: 20px 20px 0 0;
+  background-color: #d66e6e;
+}
+
+.pen-one {
+  position: absolute;
+  height: 40%;
+  width: 4.8%;
+  top: 10%;
+  left: 56%;
+  background-color: #2E86C1;
+  transform: rotate(15deg);
+  z-index: 4;
+}
+.pen-one .head {
+  position: absolute;
+  height: 30%;
+  width: 330%;
+  top: -28%;
+  left: -100%;
+  border-radius: 60%;
+  background-color: #62E81A;
+}
+.pen-one .head .eye-one {
+  position: absolute;
+  height: 30%;
+  width: 25%;
+  top: 25%;
+  left: 9%;
+  border-radius: 50%;
+  background-color: white;
+}
+.pen-one .head .eye-one .pupil {
+  position: absolute;
+  height: 35%;
+  width: 35%;
+  left: 30%;
+  top: 25%;
+  border-radius: 50%;
+  background-color: black;
+}
+.pen-one .head .eye-two {
+  position: absolute;
+  height: 30%;
+  width: 25%;
+  top: 25%;
+  left: 39%;
+  border-radius: 50%;
+  background-color: white;
+}
+.pen-one .head .eye-two .pupil {
+  position: absolute;
+  height: 35%;
+  width: 35%;
+  left: 30%;
+  top: 25%;
+  border-radius: 50%;
+  background-color: black;
+}
+.pen-one .head .eye-three {
+  position: absolute;
+  height: 30%;
+  width: 25%;
+  top: 25%;
+  left: 69%;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 3;
+}
+.pen-one .head .eye-three .pupil {
+  position: absolute;
+  height: 35%;
+  width: 35%;
+  left: 30%;
+  top: 25%;
+  border-radius: 50%;
+  background-color: black;
+}
+.pen-one .head .antenna {
+  position: absolute;
+  height: 80%;
+  width: 6%;
+  left: 47%;
+  top: -60%;
+  background: #62E81A;
+}
+.pen-one .head .antenna:before {
+  position: absolute;
+  content: "";
+  height: 20%;
+  width: 150%;
+  top: -5%;
+  border-radius: 50%;
+  background: #62E81A;
+}
+.pen-one .head .ear-left {
+  position: absolute;
+  height: 40%;
+  width: 20%;
+  left: -10%;
+  top: 15%;
+  border-radius: 0 20px 0 20px;
+  background: #62E81A;
+  transform: rotate(15deg);
+}
+.pen-one .head .ear-right {
+  position: absolute;
+  height: 40%;
+  width: 20%;
+  right: -9%;
+  top: 15%;
+  border-radius: 0 20px 0 20px;
+  background: #62E81A;
+  transform: rotate(35deg);
+}
+.pen-one .collar {
+  position: absolute;
+  height: 5%;
+  width: 130%;
+  left: -10%;
+  border-radius: 30%;
+  background-color: #7D3C98;
+}
+
+.pen-two {
+  position: absolute;
+  height: 40%;
+  width: 5%;
+  top: 10%;
+  left: 47%;
+  background-color: #8ca6bf;
+  transform: rotate(-5deg);
+  z-index: 4;
+}
+.pen-two .pen-tip {
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  top: -14%;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #6b8cad;
+}
+.pen-two .pen-tip:before {
+  position: absolute;
+  content: "";
+  height: 35%;
+  width: 140%;
+  background-color: #3f5973;
+}
+.pen-two .rubber {
+  position: absolute;
+  height: 30%;
+  width: 110%;
+  left: -5%;
+  top: 5%;
+  background-color: #486683;
+}
+
+.marker-one {
+  position: absolute;
+  height: 20%;
+  width: 6%;
+  top: 27%;
+  left: 29%;
+  background-color: #acbfd2;
+  transform: rotate(-10deg);
+  z-index: 4;
+}
+.marker-one .cap {
+  position: absolute;
+  content: "";
+  height: 90%;
+  width: 110%;
+  left: -5%;
+  top: -70%;
+  border-radius: 30px 30px 0 0;
+  background-color: #484F90;
+}
+.marker-one .cap:before {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 75%;
+  left: -37%;
+  top: 20%;
+  border-radius: 0 0 0 30px;
+  background-color: #484F90;
+}
+.marker-one .cap:after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 10%;
+  left: -35%;
+  top: 20%;
+  background-color: #484F90;
+}
+
+.marker-two {
+  position: absolute;
+  height: 20%;
+  width: 5%;
+  top: 27%;
+  left: 60%;
+  background-color: #acbfd2;
+  transform: rotate(20deg);
+  z-index: 4;
+}
+.marker-two .cap {
+  position: absolute;
+  content: "";
+  height: 90%;
+  width: 110%;
+  left: -5%;
+  top: -70%;
+  border-radius: 30px 30px 0 0;
+  background-color: #E09809;
+}
+
+.stripe-blue-cover {
+  position: absolute;
+  top: 6.5%;
+  width: 120%;
+  height: 20%;
+  left: -10%;
+  border-bottom-left-radius: 80%;
+  border-bottom-right-radius: 80%;
+  border: 40px solid #1B2631;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  z-index: 7;
+}
+
+.stripe-red {
+  position: absolute;
+  top: 12%;
+  width: 120%;
+  height: 20%;
+  left: -10%;
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 60%;
+  border: 60px solid #CB4646;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  z-index: 6;
+}
+
+.stripe-yellow {
+  position: absolute;
+  top: 22%;
+  width: 120%;
+  height: 20%;
+  left: -10%;
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 60%;
+  border: 60px solid #E09809;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  z-index: 5;
+}
+
+.stripe-blue {
+  position: absolute;
+  top: 33%;
+  width: 120%;
+  height: 20%;
+  left: -10%;
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 60%;
+  border: 60px solid #484F90;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.insignia-left {
+  position: absolute;
+  height: 3%;
+  width: 38%;
+  top: 68%;
+  left: 22%;
+  border-radius: 50%/30px 100% 10px 0;
+  background: #acbfd2;
+  transform: rotate(-70deg);
+  z-index: 7;
+}
+
+.insignia-right {
+  position: absolute;
+  height: 3%;
+  width: 32%;
+  top: 65%;
+  left: 38%;
+  border-radius: 50%/30px 100% 10px 0;
+  background: #acbfd2;
+  transform: rotate(70deg);
+  z-index: 7;
+}
+
+.insignia-right-bottom {
+  position: absolute;
+  height: 3%;
+  width: 25%;
+  top: 71.5%;
+  left: 38%;
+  border-radius: 50%/30px 100% 10px 0;
+  background: #acbfd2;
+  transform: rotate(-130deg);
+  z-index: 7;
+}
+
+.insignia-left-bottom {
+  position: absolute;
+  height: 3%;
+  width: 29%;
+  top: 75%;
+  left: 30.6%;
+  border-radius: 50%/30px 100% 10px 0;
+  background: #acbfd2;
+  transform: rotate(130deg);
+  z-index: 7;
+}
+
+.insignia-background-one {
+  position: absolute;
+  height: 34%;
+  width: 34.5%;
+  top: 54%;
+  left: 23.5%;
+  -webkit-clip-path: polygon(71% 0, 37% 93%, 91% 33%);
+  clip-path: polygon(71% 0, 37% 93%, 91% 33%);
+  background: #acbfd2;
+  transform: rotate(-1deg);
+  z-index: 7;
+}
+
+.insignia-background-two {
+  position: absolute;
+  height: 15%;
+  width: 16%;
+  top: 67.5%;
+  left: 49.5%;
+  -webkit-clip-path: polygon(0 26%, 50% 75%, 21% 6%);
+  clip-path: polygon(0 26%, 50% 75%, 21% 6%);
+  background: #acbfd2;
+  transform: rotate(7deg);
+  z-index: 7;
+}
